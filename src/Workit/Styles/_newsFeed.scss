@@ -1,0 +1,18 @@
+.newsfeed-wrapper{
+	// background-color:white;
+	position:absolute;
+	max-height:calc(100% - 80px);
+	width:300px;
+	bottom:0;
+	right:0;
+	overflow-y:scroll;
+}
+
+.news-item-wrapper{
+	box-shadow:$downshadow;
+	border-left:solid 2px $blue;
+}
+
+.no-margin-top{
+	margin-top:0px !important;
+}

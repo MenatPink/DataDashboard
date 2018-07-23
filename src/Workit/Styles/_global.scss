@@ -1,0 +1,53 @@
+					
+																						/*COLOR PALETTE*/
+// Greys
+$darkgrey: #343a40;
+$lightgrey: #92969B;
+
+// Primarys/Sec
+$blue: #465892;
+
+
+$orange: #ffd454;
+
+																						/*COLOR PALETTE 2*/
+$purple: #571845;
+$darkred: #900c3e;
+$red: #c70039;
+$darkorange: #ff5733;
+$yellow: #ffd454;
+				
+.blue{
+	background-color: $blue !important;
+}
+
+.red{
+	background-color: $red !important;
+}
+
+$yellowRedGradient: linear-gradient(45deg, rgb(255,212,84),rgba(144,12,62, 1) 130%);
+
+																		// FONT FACES
+$lato: 'Lato', sans-serif;
+
+																						// STYLE VARIABLES
+$downshadow:  0 10px 6px -6px #777;
+$leftshadow:  10px 0px 6px -6px #777;
+$shadow:  0 1px 5px rgba(0, 0, 0, 0.55);
+
+																						/*GLOBAL STYLES*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:rgba(234, 234, 234, 1);
+	overflow-y:hidden;
+}
+.container{
+	max-width:1500px;
+}
+
+

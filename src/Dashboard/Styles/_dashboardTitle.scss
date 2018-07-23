@@ -1,0 +1,14 @@
+.dashboard-title-wrapper{
+    background-color:white;
+    height:138px;
+    box-shadow:1px 3px 1px rgb(211, 211, 211);
+    position:relative;
+    h2{
+        margin-left:70px;
+        font-family: $montserrat;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        color:#6c757e;
+    }
+}

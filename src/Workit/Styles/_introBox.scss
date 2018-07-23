@@ -1,0 +1,141 @@
+.cover-photo{
+	height:400px;
+	overflow:hidden;
+	position:relative;
+	box-shadow: $downshadow;
+	img{
+		width:100%;
+	}
+	.cover-photo-overlay{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:2;
+		background-image: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4));
+	}
+}
+.control-tab{
+	margin-top:25px;
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	font-weight:bold;
+	font-size:20px;
+	color:$blue;
+	background-color: rgb(240, 240, 240);
+	box-shadow:$downshadow;
+	height:40px;
+	position:relative;
+	.image-wrapper{
+		width:20px;
+	}
+	nav{
+		background-image:url('C:/Users/xx776tb/Desktop/workit/src/images/portrait.jpg');
+		background-size:contain;
+	}
+
+
+	.menu-item{
+		position:absolute;
+		border-radius:50%;
+		width:120px;
+		height:120px;
+		top:50%;
+		left:50%;
+		z-index:10;
+		transform:translate(-50%,-50%);
+		background-color:$blue;
+		transition-property:all;
+		transition-timing-function:ease-in-out;
+			@for $i from 1 through 5{
+				&:nth-child(#{$i}){
+					transition-duration: 150ms * $i ;
+				}
+			}
+	}
+
+
+	.gooey-menu-main{
+		width:200px;
+		height:200px;
+		z-index:13;
+		border-radius:50%;
+		// border:solid 3px white;
+		cursor:pointer;
+		box-shadow:$shadow;
+		background-color:$red;
+		.open{
+			width:120px;
+			height:120px;
+			transition:all 0.5 ease-in-out;
+				top:-260px;
+				@for $i from 1 through 5{
+					&:nth-child(#{$i}){
+						left:1px * ($i * 245);
+					}
+				}
+		}
+				i{
+					position:absolute;
+					top:50%;
+					left:50%;
+					transform:translate(-50%,-50%);
+					transition:inherit;
+					font-size:40px
+				}
+	}
+		 h3{
+			color:white;
+			position:absolute;
+			z-index:4;
+			width:auto;
+			top:-150px;
+			font-family:$lato;
+			font-size:60px;
+		}
+	.tab-select{
+		cursor:pointer;
+		transition: all 0.5s ease-in-out;
+		height:100%;
+		border:none;
+		width:220px;
+		background-color:rgb(240, 240, 240);
+		position:relative;
+		z-index:4;
+		&::after{
+			position:absolute;
+			bottom:-20%;
+			left:-2%;
+			content:"";
+			width:0%;
+			height:3px;
+			background-color:#AD3909;
+		}
+		&:hover{
+			&::after{
+			animation:tab-select-animation 0.5s; 
+			animation-iteration-count:1;
+			animation-fill-mode:forwards;
+			z-index:-2;
+			}
+		}
+	}
+	p{
+		margin:0;
+		vertical-align:middle;
+		width:100%;
+		height:100%;
+		background-color:rgb(240, 240, 240);
+		font-weight:bold;
+		letter-spacing:1.5px;
+		color: $red;
+		transition:all 0.5s ease-in-out;
+		&:hover{
+			color:white;
+			background-color:$red;
+		}
+	}
+}

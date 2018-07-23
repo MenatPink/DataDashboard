@@ -1,0 +1,48 @@
+.graph-title{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    select{
+        background:transparent;
+        font-family:$montserrat;
+        border: 1px solid #e0e0df;
+        min-width:90px;
+        padding:12px;
+        color:#a09f9f;
+        border-radius:10px;
+    }
+    h2{
+        font-family:$montserrat;
+        color:#6c757e;
+        font-size:1.4rem;
+    }
+}
+.graphs-wrapper{
+    padding-top:50px;
+    height:auto;
+    margin-bottom:20px;
+
+}
+.graph-wrapper{
+    padding-left:40px;
+    padding-right:40px;
+    .graph{
+        padding-top:20px;
+        width:100%;
+        width:800px;
+        height:500px;
+    }
+    .graph-text{
+        text{
+            font-family:$montserrat;
+            font-size:1.2rem;
+            fill:#9da0a6;
+        }
+        path{
+            stroke:#9da0a6;
+        }
+        line{
+            stroke:#9da0a6;
+        }
+    }
+}

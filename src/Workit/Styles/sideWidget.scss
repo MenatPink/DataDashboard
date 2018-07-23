@@ -1,0 +1,30 @@
+.widget-wrapper{
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.55);
+	margin-bottom:40px;
+	padding-left:15px;
+	height:90px;
+	padding-top:15px;
+	cursor:pointer;
+	background-color:white;
+}
+.widget-icon{
+	display:inline-block;
+	width:40px;
+	i{
+		color:$blue;
+		font-size:30px;
+
+		transform:translateY(-30%);
+	}
+}
+.widget-text{
+	display:inline-block;
+	width:160px;
+	h4{
+		font-weight:bold;
+		font-size:16px;
+	}
+	p{
+		font-size:10px;
+	}
+}

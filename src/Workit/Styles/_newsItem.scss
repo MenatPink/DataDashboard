@@ -1,0 +1,16 @@
+.news-item-wrapper{
+	width:100%;
+	margin:auto;
+	// border-bottom:solid 1px #8C8C8C;
+	height:150px;
+	cursor:pointer;
+		:nth-of-type(odd){
+		background-color:white;
+		margin-top:30px;
+	}
+	p{
+		height:100%;
+		text-align:center;
+		padding-top:50px;
+	}
+}

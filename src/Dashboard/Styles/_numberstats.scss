@@ -1,0 +1,31 @@
+.number-stats{
+    background-color:#f6f6f6;
+    height:200px;
+    display:flex;
+    justify-content: space-around;
+    padding-top:70px;
+    div{
+        height:90px;
+        border-left:solid black 3px;
+        padding-left:15px;
+        h3{
+            font-size:3rem;
+            font-family:$montserrat;
+            font-weight:bold;
+            color:#5d646c;
+        }
+        p{
+            color:#b8bec4;
+            font-size:1.2rem;
+        }
+    }
+    div:nth-of-type(1), div:nth-of-type(3), div:nth-of-type(5){
+        border-left: 3px solid $green;
+    }
+    div:nth-of-type(2){
+        border-left: 3px solid #287e7e;
+    }
+    div:nth-of-type(4), div:nth-of-type(6){
+        border-left: 3px solid #f15822;
+    }
+}

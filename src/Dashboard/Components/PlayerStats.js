@@ -25,6 +25,7 @@ class PlayerStats extends React.Component{
         
         let arc = d3.arc()
             .innerRadius(65)
+            //Test comment
             .outerRadius(this.svgData.radius)
             .startAngle(0)
             .endAngle(this.tau)
